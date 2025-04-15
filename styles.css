@@ -6,17 +6,17 @@
 
 body {
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(227, 227, 227);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'DM Sans'
 }
 
 .container {
     background-color: rgb(227, 227, 227);
     width: 1000px;
-    height: 700px;
+    height: 750px;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -49,24 +49,26 @@ body {
 }
 
 .left-one {
-    height: 50%;
     background-color: hsl(31, 66%, 93%);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    flex: 1;
 }
 
 .left-one p {
-    font-size: 30px;
-    font-weight: 900;
-    padding: 50px 5px 0px 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 3em 0 0 1em;
+    line-height: 1;
+    max-width: 7em;
 }
     
 .left-one img {
     width: 10em;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0 1em;
 }
 
 .italic-purple {
@@ -76,7 +78,7 @@ body {
 
 .left-two {
     background-color: hsl(39, 100%, 71%) ;
-    height: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -84,15 +86,17 @@ body {
 }
 
 .left-two p {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 20px 5px 0px 10px;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding: 1em 0 0.5em 0.5em;
+    line-height: 1;
+    
 }
 
 .left-two img { 
     width: 11em;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0.5em;
 }
 
 .square-col-top {
@@ -120,7 +124,7 @@ body {
 }
 
 .bottom-row-left img {
-    width: 13.8em;
+    width: 13em;
     padding: 1em 1em 0 0.5em;
 }
 
@@ -135,27 +139,29 @@ body {
 
 .bottom-row-right {
     
-    flex: 2;
+    flex: 1.85;
     border-radius: 5px;
     background-color: hsl(256, 67%, 59%) ;
     color: white;
-    display: flex
+    display: flex;
 }
 
 .bottom-row-right img  {
     width: auto;
-    height: 15em;
-    padding: 1em;
+    height: 12em;
+    padding-left: 1em;
+    align-self: center;
+   
 }
 
 .bottom-row-right p  {
-    font-size: 2em;
+    font-size: 1.7em;
     padding-right: 5px;
     align-self: center;
  }
 
 .col-top-right {
-    flex: 0.7;
+    flex: 1;
     flex-direction: column;
     position: relative;
     overflow: hidden;
@@ -163,19 +169,21 @@ body {
     border-radius: 5px;
     
     
+    
 }
 
 .square-top-left {
-    flex: 2;
+    flex: 3;
     flex-direction: column;
     display: flex;
     gap: 10px;
 }
 
 .col-top-right p:first-of-type {
-    font-size: 1.2em;
-    padding: 1em 0px 20px 1.3em;
-    font-weight: 900;
+    font-size: 1.4em;
+    padding: 1em 1em 1em 1.3em;
+    font-weight: 500;
+    line-height: 1;
 }
 
 .col-top-right img {
@@ -185,8 +193,8 @@ body {
 }
 
 .col-top-right p:last-of-type {
-    padding: 1em 0 1em 2.2em;
-    font-size: 0.7em;
+    padding: 1em 0 1em 2em;
+    font-size: 0.8em;
 }
 
 .square-top {
@@ -202,8 +210,11 @@ body {
 }
 
 .square-top p:first-of-type {
-    font-size: 2em;
+    font-size: 3em;
     color: white;
+    text-align: center;
+    line-height: 1;
+    width: 7em;
     
 }
 .square-top img {
@@ -215,6 +226,8 @@ body {
 .square-top p:last-of-type {
     color: white;
     font-weight: 100;
+    font-size: 1em;
+    
 }
 .square-bottom {
 gap: 10px;
@@ -243,6 +256,8 @@ overflow: hidden;
     background-color: hsl(39, 100%, 71%);
     border-radius: 5px;
     flex-direction: column;
+    display: flex;
+
 
    
   
@@ -250,15 +265,18 @@ overflow: hidden;
 
 .square-bottom-right img {
 height: auto; 
-width: 150px;
-margin-top: 0.5em;
-margin-left: 1em;
+width: 200px;
+margin: 0 auto;
+display: flex;
+
 }
 
 .square-bottom-right p {
     font-size: 1.3em;
-    padding: 0.7em 1em 0 1em;
-    font-weight: 900;
+    padding: 0.7em 1em 0.8em 1.6em;
+    font-weight: 500;
+    line-height: 1;
+
 }
 
 .square-bottom-left {
@@ -267,6 +285,9 @@ margin-left: 1em;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
     
      
     }
@@ -281,8 +302,141 @@ margin-left: 1em;
 
 .square-bottom-left p {
  font-size: 1.5em;
- padding: 1em;
- font-weight: 100;
+ padding: 0.5em 0 0 1em;
+ font-weight: 500;
  
 }
+
+
+/* SMALL SCREENS RULES START HERE */
+
+@media screen and (max-width: 430px) {
+  
+    body {
+        max-width: 100%;
+      
+        
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        
+       
+       
+    }
+   .square {
+    margin: 0;
+    display: flex;
+    
+    
+   }
+.square-bottom {
+    display: block;
+    
+
+}
+.square-bottom-left {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+
+}
+
+
+
+.square-bottom-right p {
+    padding-left: 1em
+}
+.square-bottom-right img {
+  margin-left: 1em;
+  width: 15em
+}
+
+ .square-col-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+ }
+.square-col-top {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.bottom-row-right {
+    flex-direction: column;
+    padding: 0.5em;
+    text-align: center;
+}
+.bottom-row-right img {
+    margin: 0 auto;
+
+}
+.bottom-row-right p {
+    max-width: 8em;
+    font-size: 2em;
+}
+.square-top-left {
+    order: 1;
+}
+.left-col {
+    order: 2;
+}
+.left-two {
+    margin-bottom: 1em;
+
+}
+.bottom-row-left {
+    margin-bottom: 1em;
+}
+.square-top p:first-of-type {
+    padding: 0.8em 0.5em 0 0.5em;
+
+}
+.square-top p:last-of-type {
+    padding-bottom: 1em;
+}
+.square-top {
+   flex: 1;
+   padding: 1em
+}
+.col-top-right {
+    flex: 2;
+    text-align: center;
+    
+    
+}
+.col-top-right p:last-of-type {
+padding: 1em 2em;
+font-size: 1em
+}
+.col-top-right img {
+    width: 20em;
+    margin: 0 auto;
+}
+
+.left-one p {
+padding-top: 2em
+}
+
+.left-one {
+    padding-bottom: 1em;
+    
+}
+}
+    
+.left-two p {
+    max-width: 10em;
+    padding-bottom: 0;
+  
+}
+  
+ .left-two img {
+    width: 15em;
+    margin-left: 0.5em;
+    padding-top: 0;
+ }
+    
+
+
+
 

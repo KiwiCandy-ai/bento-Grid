@@ -13,33 +13,39 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 .container {
-    background-color: white;
+    background-color: rgb(227, 227, 227);
     width: 1000px;
     height: 700px;
     padding: 1em;
     display: flex;
     flex-direction: row;
    
-}
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-.left {
-  
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.left-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
 .square {
-background-color: green;
-flex: 4;
-display: flex;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
 }
 
 .left-one {
@@ -49,7 +55,6 @@ display: flex;
     display: flex;
     flex-direction: column;
     gap: 10px;
-   
 }
 
 .left-one p {
@@ -62,8 +67,6 @@ display: flex;
     width: 10em;
     margin: 0 auto;
     padding: 10px;
-   
-
 }
 
 .italic-purple {
@@ -78,14 +81,12 @@ display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 5px;
-
 }
 
 .left-two p {
     font-size: 30px;
     font-weight: 700;
     padding: 20px 5px 0px 10px;
-
 }
 
 .left-two img { 
@@ -93,3 +94,195 @@ display: flex;
     margin: 0 auto;
     padding: 5px;
 }
+
+.square-col-top {
+    gap: 10px;
+    flex: 3;
+    display: flex;
+}
+
+
+.square-col-bottom {
+    
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-row-left {
+
+    flex: 1;
+    background-color:hsl(0, 0%, 100%) ;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+  
+}
+
+.bottom-row-left img {
+    width: 13.8em;
+    padding: 1em 1em 0 0.5em;
+}
+
+.bottom-row-left p {
+    font-size: 1em;
+    padding: 0.5em 0 0 0.5em;
+}
+
+.bottom-row-left span {
+    font-size: 4em
+}
+
+.bottom-row-right {
+    
+    flex: 2;
+    border-radius: 5px;
+    background-color: hsl(256, 67%, 59%) ;
+    color: white;
+    display: flex
+}
+
+.bottom-row-right img  {
+    width: auto;
+    height: 15em;
+    padding: 1em;
+}
+
+.bottom-row-right p  {
+    font-size: 2em;
+    padding-right: 5px;
+    align-self: center;
+ }
+
+.col-top-right {
+    flex: 0.7;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(254, 88%, 90%);
+    border-radius: 5px;
+    
+    
+}
+
+.square-top-left {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.col-top-right p:first-of-type {
+    font-size: 1.2em;
+    padding: 1em 0px 20px 1.3em;
+    font-weight: 900;
+}
+
+.col-top-right img {
+    height: auto;
+    width: 275px;
+    margin-left: 1.5em;
+}
+
+.col-top-right p:last-of-type {
+    padding: 1em 0 1em 2.2em;
+    font-size: 0.7em;
+}
+
+.square-top {
+    
+    flex: 2.5;
+    background-color: hsl(256, 67%, 59%) ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.square-top p:first-of-type {
+    font-size: 2em;
+    color: white;
+    
+}
+.square-top img {
+    width: 9em;
+    height: auto;
+    padding-top: 1em;
+}
+
+.square-top p:last-of-type {
+    color: white;
+    font-weight: 100;
+}
+.square-bottom {
+gap: 10px;
+flex: 2;
+display: flex;
+position: relative;
+overflow: hidden;
+    
+    
+}
+
+.italic {
+    font-style: italic;
+}
+
+.color-text {
+    color: hsl(39, 100%, 71%)
+}
+
+
+
+
+
+.square-bottom-right {
+    flex: 1;
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 5px;
+    flex-direction: column;
+
+   
+  
+}
+
+.square-bottom-right img {
+height: auto; 
+width: 150px;
+margin-top: 0.5em;
+margin-left: 1em;
+}
+
+.square-bottom-right p {
+    font-size: 1.3em;
+    padding: 0.7em 1em 0 1em;
+    font-weight: 900;
+}
+
+.square-bottom-left {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+     
+    }
+
+.square-bottom-left img {
+    height: auto; 
+    width: 190px;
+    margin-top: 0.5em;
+    align-self: flex-end;
+    
+}
+
+.square-bottom-left p {
+ font-size: 1.5em;
+ padding: 1em;
+ font-weight: 100;
+ 
+}
+
